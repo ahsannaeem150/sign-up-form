@@ -112,10 +112,6 @@ body {
     color: white;
 }
 
-.form-group {
-    width: 50%;
-}
-
 .form {
     margin: 40px 0;
 }
@@ -138,9 +134,27 @@ h4>a:hover {
 .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .form-group {
-    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.form-group>label {
+    margin: 20px 0 10px 0;
+    font-family: var(--font);
+    font-style: italic;
+    color: var(--pink);
+}
+
+.form-group {
+    margin: 0px 30px;
+}
+
+.form-group>input {
+    width: 200%;
 }
