@@ -1,6 +1,6 @@
 :root {
     --font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --pink: #bb1264;
+    --pink: rgb(187, 18, 100);
     --blue: #033173;
     --darkBlue: #15264d;
 }
@@ -31,7 +31,7 @@ body {
 .formDiv {
     flex-basis: 6;
     height: 100vh;
-    background-color: #15264d;
+    background-color: var(--darkBlue);
     width: 55vw;
 }
 
@@ -58,4 +58,89 @@ body {
 
 .companyLogo>img {
     margin-right: 20px;
+}
+
+.formSideContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.formSide {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    flex: 1;
+    align-content: center;
+}
+
+.btn {
+    background-color: var(--darkBlue);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: var(--font);
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid var(--pink);
+    /* Green */
+    color: white;
+    box-shadow: 0 10px 20px rgb(187, 18, 100, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.formFinish {
+    margin: 40px;
+}
+
+.btn:hover {
+    color: var(--pink);
+    border: 2px solid white;
+    box-shadow: 0 10px 20px rgba(114, 114, 114, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.headings>h3 {
+    color: rgb(187, 18, 100);
+
+}
+
+.headings {
+    width: 70%;
+    padding: 40px;
+}
+
+.headings>h2 {
+    color: white;
+}
+
+.form-group {
+    width: 50%;
+}
+
+.form {
+    margin: 40px 0;
+}
+
+h4>a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+h4>a:hover {
+    color: white;
+}
+
+.formContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 1px;
 }
