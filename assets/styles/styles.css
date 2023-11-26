@@ -149,7 +149,7 @@ h4>a:hover {
 .form-group>label {
     margin: 20px 0 10px 0;
     font-family: var(--font);
-    font-style: italic;
+    font-size: small;
     color: var(--pink);
 }
 
@@ -164,7 +164,7 @@ h4>a:hover {
 .form-group>input {
     background-color: #000000;
     color: white;
-    padding: 3px 10px;
+    padding: 5px 10px;
     border: 1px solid rgb(62, 62, 62);
 }
 
@@ -172,9 +172,17 @@ h4>a:hover {
     border: 1px solid rgba(41, 252, 80, 0.703);
 }
 
+.form-group>input:invalid {
+    border: 1px solid var(--pink);
+}
+
+.form-group>input::placeholder {
+    color: rgb(33, 40, 49)
+}
+
 .form-group>input:focus {
     outline: none;
-    border: 2px solid var(--pink);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .btn-group {
