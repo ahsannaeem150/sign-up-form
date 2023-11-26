@@ -37,37 +37,38 @@
                             <h3><em>You know you want to.</em></h3>
                         </div>
                         <div class="formContainer">
-                            <form action="#" method="post" class="form">
+                            <form action="#" method="post" class="form" id="myForm">
                                 <div class="form-group">
                                     <label for="fname">FIRST NAME</label>
                                     <input type="text" name="fname" id="fname" required>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group second-form">
                                     <label for="lname">LAST NAME</label>
-                                    <input type="text" name="lname" id="lname">
+                                    <input type="text" name="lname" id="lname" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">EMAIL</label>
-                                    <input type="email" name="email" id="email">
+                                    <input type="email" name="email" id="email" required>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group second-form">
                                     <label for="phone">PHONE NUMBER</label>
-                                    <input type="tel" name="phone" id="phone">
+                                    <input type="tel" name="phone" id="phone" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">PASSWORD</label>
-                                    <input type="password" name="password" id="password">
+                                    <input type="password" name="password" id="password" required>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group second-form">
                                     <label for="confirm">CONFIRM PASSWORD</label>
-                                    <input type="password" name="confirm" id="confirm">
+                                    <input type="password" name="confirm" id="confirm" required>
                                 </div>
                             </form>
+                            <div class="formFinish">
+                                <Button form="myForm" type="submit" class="btn">Create Account</Button>
+                                <h4>Already have an account? <a href="#">Log in</a></h4>
+                            </div>
                         </div>
-                        <div class="formFinish">
-                            <Button type="submit" class="btn">Create Account</Button>
-                            <h4>Already have an account? <a href="#">Log in</a></h4>
-                        </div>
+
                     </div>
                     <div></div>
                 </div>
